@@ -33,6 +33,20 @@ npm run build
 
 ## MCP Config
 
+### Git-pinned portable install
+
+The repository tracks a self-contained compiled `dist/` entrypoint and has no
+runtime package dependencies. Development dependencies are exact-pinned and used
+only to type-check and rebuild the bundle. Agents can therefore use an exact
+reviewed commit without a machine-specific checkout path:
+
+```bash
+npx -y git+https://github.com/Tyvonneboykin/facebook-marketplace-mcp.git#<pinned-commit>
+```
+
+Keep the full commit SHA in managed MCP configuration. Do not use a branch name
+or an unpinned Git URL.
+
 ### Claude Desktop
 
 Add this to your Claude Desktop MCP config:
