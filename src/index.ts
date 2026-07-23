@@ -86,7 +86,7 @@ const tools: Tool[] = [
 const server = new Server(
   {
     name: 'facebook-marketplace-mcp',
-    version: '1.0.0',
+    version: '1.1.0',
   },
   {
     capabilities: {
